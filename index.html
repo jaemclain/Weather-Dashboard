@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Display Search Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- H1 -->
+    <div class="text-center">
+        <h1>
+            Weather Dashboard
+        </h1>
+    </div>
+
+    <!-- Search Content Column -->
+    <div class="column">
+        <div class="column container" id="search column">
+            <aside class="menu has-text-center">
+                <p class="menu-label">Search for a City: </p>
+                <div class="field has-addon">
+                    <div class="contorl is-expanded">
+                        <input class="input" type="text" id="search-input">
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-primary" id="search-btn"><i class="fa fa-search"></i></button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- City / Weather Content Container/Column -->
+    <div class="main-content container">
+        <div class="column">
+            <div class="column">
+                <div class="column">
+
+                    <div class="card">
+                        <h2 class="card-header-title">
+                            <span id="current-header"></span>
+                            <img id="current-icon" src="">
+                        </h2>
+                        <div id="current-info" class="card-content">
+                            <div>
+                                <p>
+                                    Temperature:
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    Humidity:
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    Wind Speed: 
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    UV Index: 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 Day Forecast Content -->
+    <div class="column">
+        <div class="column">
+            <div class="card forecast-card">
+                <div class="card-content daily-card">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
